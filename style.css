@@ -14,21 +14,20 @@ body{
 }
 
 .logo{
-  display: block;
-  width: 420px;
-  max-width: 90vw;
-  height: auto;
-  margin: 40px auto 100px;
+  display:block;
+  width:560px;
+  max-width:92vw;
+  height:auto;
+  margin:20px auto 60px;
 }
 
 .concept{
-  font-size: 26px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-  margin: 0 0 50px;
+  font-size:26px;
+  font-weight:600;
+  letter-spacing:0.02em;
+  line-height:1.5;
+  margin:0 0 40px;
 }
-
 .concept span{
   font-weight: 400;
   font-size: 18px;
