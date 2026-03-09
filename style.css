@@ -1,110 +1,146 @@
-body{
-  margin: 0;
-  background: #ffffff;
-  color: #000000;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+* {
+  box-sizing: border-box;
 }
 
-.container{
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+.container {
   max-width: 720px;
   margin: 0 auto;
-  padding: 120px 24px;
+  padding: 72px 24px 96px;
   text-align: center;
 }
 
-.logo{
-  display:block;
-  width:560px;
-  max-width:92vw;
-  height:auto;
-  margin:20px auto 60px;
-}
-
-.concept{
-  font-size:26px;
-  font-weight:600;
-  letter-spacing:0.02em;
-  line-height:1.5;
-  margin:0 0 40px;
-}
-.concept span{
-  font-weight: 400;
-  font-size: 18px;
+.logo {
+  width: 220px;
+  max-width: 70%;
+  height: auto;
   display: block;
-  margin-top: 8px;
+  margin: 0 auto 40px;
 }
 
-.micro{
-  font-size: 13px;
-  letter-spacing: 0.06em;
-  color: #777;
-  margin: -20px 0 60px;
+.concept {
+  margin: 0 0 20px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
 }
 
-.statement{
-  max-width: 520px;
-  margin: 0 auto 0;
+.concept span {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.micro {
+  margin: 0 0 40px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.statement {
+  max-width: 560px;
+  margin: 0 auto 64px;
   font-size: 15px;
-  line-height: 2;
-  color: #555;
-}
-
-.rule{
-  width: 72px;
-  height: 1px;
-  background: #000;
-  opacity: 0.15;
-  margin: 120px auto 0;
+  font-weight: 300;
+  line-height: 2.1;
+  letter-spacing: 0.04em;
 }
 
 .founder,
-.contact{
-  margin-top: 120px;
-  max-width: 420px;
-  margin-left: auto;
-  margin-right: auto;
+.contact {
+  margin-top: 56px;
 }
 
 .founder h2,
-.contact h2{
-  font-size: 14px;
-  letter-spacing: 0.1em;
-  margin: 0 0 20px;
+.contact h2 {
+  margin: 0 0 16px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
 }
 
 .founder p,
-.contact p{
-  margin: 0;
-  font-size: 15px;
+.contact p {
+  margin: 0 0 16px;
+  font-size: 14px;
+  font-weight: 300;
   line-height: 2;
-  color: #555;
+  letter-spacing: 0.04em;
 }
 
-.contact a{
-  display: inline-block;
-  margin-top: 16px;
-  color: #000;
+.contact a,
+.instagram {
+  color: #111;
   text-decoration: none;
-  border-bottom: 1px solid rgba(0,0,0,.6);
-  padding-bottom: 3px;
+  border-bottom: 1px solid #111;
+  padding-bottom: 2px;
+  transition: opacity 0.2s ease;
 }
 
-a{
-  transition: opacity .2s ease;
-}
-a:hover{
-  opacity: .6;
+.contact a:hover,
+.instagram:hover {
+  opacity: 0.6;
 }
 
-.instagram{
-  text-decoration: none;
-  color: #000;
-  font-size: 13px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  border-bottom: 1px solid #000;
-  padding-bottom: 4px;
-  margin-top: 120px;
+.instagram {
   display: inline-block;
+  margin-top: 56px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 56px 20px 80px;
+  }
+
+  .logo {
+    width: 180px;
+    margin-bottom: 32px;
+  }
+
+  .concept {
+    font-size: 24px;
+  }
+
+  .concept span {
+    font-size: 34px;
+  }
+
+  .micro {
+    font-size: 20px;
+  }
+
+  .statement {
+    font-size: 14px;
+  }
+
+  .founder h2,
+  .contact h2,
+  .instagram {
+    font-size: 22px;
+  }
 }
